@@ -17,7 +17,8 @@ It utilizes two functions: create_db_connection and read_csv.
 Usage:
 1. Modify the CSV file to reflect your desired entries.
 2. Edit the name of the input CSV file: input_csv_filename = "input.csv"
-3. Execute
+3. Modify the headers (Encoded credentials to base 64)
+4. Execute
 
 Author: John Takacs
 Email: john.takacs@me.com
@@ -102,7 +103,7 @@ if __name__ == '__main__':
     # Get the session_id via get_cookie()
     my_response = authorization.authorization()
     my_cookies = authorization.get_cookie(my_response, debug)
-    headers: Dict[str, str] = {"Content-Type": "application/json", "Authorization": "Basic YWRtaW46d2ViY28xMjM=",
+    headers: Dict[str, str] = {"Content-Type": "application/json", "Authorization": "Basic MjM=",
                                'Cookie': my_cookies}
     if my_response.status_code == 200:
         # The request was successful

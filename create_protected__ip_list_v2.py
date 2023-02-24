@@ -14,7 +14,8 @@ It utilizes two functions: create_protected_ip_list and read_csv.
 Usage:
 1. Modify the CSV file to reflect your desired entries.
 2. Edit the name of the input CSV file: input_csv_filename = "input.csv"
-3. Execute
+3. Modify the headers (Encoded credentials to base 64)
+4. Execute
 
 Author: John Takacs
 Email: john.takacs@me.com
