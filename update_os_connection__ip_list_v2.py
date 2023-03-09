@@ -118,7 +118,7 @@ if __name__ == '__main__':
     # Get the session_id via get_cookie()
     my_response = authorization.authorization()
     my_cookies = authorization.get_cookie(my_response, debug)
-    headers: Dict[str, str] = {"Content-Type": "application/json", "Authorization": "Basic YWRtaW46d2ViY28xMjM=",
+    headers: Dict[str, str] = {"Content-Type": "application/json", "Authorization": "Basic YtW4",
                                'Cookie': my_cookies}
     if my_response.status_code == 200:
         # The request was successful
